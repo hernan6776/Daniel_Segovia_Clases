@@ -198,5 +198,45 @@ let mi_variable7= 2;
 que si esta dentro de su "radio" (4) y vuelve a la original (2) cuando sale de ese radio y 
 entra en el "radio* de la original.*/
 
-console.log(typeof(mi_variable7));  
+console.log(typeof(mi_variable7));  // esto se hace para saber el tipo de dato 
 
+let perro = "ramiro";
+
+console.log(typeof(perro));
+
+/* tanto LET como CONST funcionan iguales en cuanto lo que son los alcances de bloque y 
+VAR tiene el alcance global // CONST no lo podemos cambiar solo en los casos que hay 
+ARRAYS por las explicaciones que veremos en el futuro:  */
+
+console.log("-----------------------")
+
+const nombres = ["dani", "sergio"];
+console.log(nombres);
+nombres.push("gastón");
+console.log(nombres);
+
+// aca se imprime [ 'dani', 'sergio' ]
+// cuando hacemos el push se imprime: [ 'dani', 'sergio', 'gastón' ] 
+
+/* ahora si hago lo siguiente se rompe el codigo:
+
+const edad = 30;
+edad = 20;
+console.log(edad);
+
+ya que no se puede modificar en const la variable  */
+
+// y en los casos de los objetos que tambien lo deja:
+
+const nombres2 = {"key": "value"};
+console.log(nombres2);
+nombres2.otro = "algo";
+console.log(nombres2);
+
+/* aca nuevamente se puede agregar otro elemento y modificarlo a pesar de ser const, 
+imprimiendo:
+
+{ key: 'value' }
+{ key: 'value', otro: 'algo' }
+
+*/
