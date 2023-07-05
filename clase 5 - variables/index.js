@@ -197,3 +197,6 @@ let mi_variable7= 2;
 {} en la cual se habia declarado e inicializado la nueva variable (4), imprime la variable 
 que si esta dentro de su "radio" (4) y vuelve a la original (2) cuando sale de ese radio y 
 entra en el "radio* de la original.*/
+
+console.log(typeof(mi_variable7));  
+
